@@ -22,13 +22,6 @@
             </ul>
         </nav>
     </header>
-    <h1>Appliance Energy Consumption</h1>
-    <div id="content"></div>
-    <!-- Give the SVG a size so shapes can be seen -->
-    <svg width="300" height="150"></svg>
-    <!-- Load D3 first, then your D3 code file -->
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="energy-d3.js"></script>
 
     <main>
         <h1>Appliance Energy Consumption in Australia</h1>
@@ -47,11 +40,23 @@
 
         <h2>About the Energy Rating Label</h2>
         <p>Under the Greenhouse and Energy Minimum Standards (GEMS) regulator, appliances sold within Australia must display the official Energy Rating Label indicating star rating and annual energy consumption estimates.</p>
+
+        <!-- NEW: Container for T04-3 chart -->
+        <div class="responsive-svg-container"></div>
     </main>
 
     <footer>
         <p>&copy; 2026 YanHanWONG 104392138 | All rights reserved. | GenAI Acknowledgement: Code scaffolded using GitHub Copilot / LLM assistance.</p>
     </footer>
+
+    <!-- D3 Library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- NEW: JS for T04-3 only -->
+    <script src="t04-3-bars.js"></script>
+
+    <!-- Old T04-2 demo (temporarily disabled) -->
+    <!-- <script src="energy-d3.js"></script> -->
 </body>
 
 </html>

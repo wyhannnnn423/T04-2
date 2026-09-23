@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appliance Energy Consumption | Televisions</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo-link">
+        <img id="power-logo" src="Images/icon/PowerIcon.png" alt="Power Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item" data-page="index.html">Home</a></li>
+        <li><a href="televisions.html" class="nav-item" data-page="televisions.html">Televisions</a></li>
+        <li><a href="about.html" class="nav-item" data-page="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="analysis-container">
+    <div class="page-header">
+      <h1>Television Energy Consumption Exploration</h1>
+      <p>Data exploration and visual analysis of the Australian television market based on Greenhouse and Energy Minimum Standards (GEMS) registration data, processed using KNIME Analytics Platform.</p>
+    </div>
+
+    <!-- Question 1 -->
+    <section class="chart-card">
+      <div class="card-header">
+        <span class="badge">Question 1</span>
+        <h2>What type of TV screen technologies are currently available in Australia and which are the most frequent?</h2>
+      </div>
+      <p class="chart-desc">Analysis of registered television models categorised by display technology (LCD, LCD LED, and OLED).</p>
+      <div class="chart-grid-2">
+        <figure>
+          <img src="Images/charts/Q1.png" alt="Screen Technology Distribution Bar Chart">
+          <figcaption>Figure 1.1: Occurrence Count by Screen Technology (Bar Chart)</figcaption>
+        </figure>
+        <figure>
+          <img src="Images/charts/Q1(2).png" alt="Screen Technology Share Pie Chart">
+          <figcaption>Figure 1.2: Market Share by Screen Technology (Pie Chart)</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Question 2 -->
+    <section class="chart-card">
+      <div class="card-header">
+        <span class="badge">Question 2</span>
+        <h2>What screen sizes are currently available, and which are the most frequent?</h2>
+      </div>
+      <p class="chart-desc">Distribution of television physical display sizes transformed from centimetres to imperial inches.</p>
+      <div class="chart-single">
+        <figure>
+          <img src="Images/charts/Q2.png" alt="Screen Sizes Occurrence Bar Chart">
+          <figcaption>Figure 2: Distribution of Available Screen Sizes in Inches</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Question 3 -->
+    <section class="chart-card">
+      <div class="card-header">
+        <span class="badge">Question 3</span>
+        <h2>Which brands have the greatest number of different models?</h2>
+      </div>
+      <p class="chart-desc">Top manufacturer registrations showing the count of unique television models listed under the Australian ERL scheme.</p>
+      <div class="chart-single">
+        <figure>
+          <img src="Images/charts/Q3.png" alt="Brand Model Count Bar Chart">
+          <figcaption>Figure 3: Count of Registered Television Models by Top Brands</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Question 4 -->
+    <section class="chart-card">
+      <div class="card-header">
+        <span class="badge">Question 4</span>
+        <h2>Which type of screen technology consumes the least amount of power?</h2>
+      </div>
+      <p class="chart-desc">Median active mode power consumption (Watts) across each major screen panel type.</p>
+      <div class="chart-single">
+        <figure>
+          <img src="Images/charts/Q4.png" alt="Median Power Consumption by Technology">
+          <figcaption>Figure 4: Median Active Power Use by Display Technology</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Question 5 -->
+    <section class="chart-card">
+      <div class="card-header">
+        <span class="badge">Question 5</span>
+        <h2>What is the relationship between screen size and power use?</h2>
+      </div>
+      <p class="chart-desc">Correlation between panel dimensions (inches) and measured active mode power consumption (Watts).</p>
+      <div class="chart-single">
+        <figure>
+          <img src="Images/charts/Q5.png" alt="Screen Size vs Power Use Scatter Plot">
+          <figcaption>Figure 5: Scatter Plot of Screen Size vs Average Mode Power Draw</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Question 6 -->
+    <section class="chart-card">
+      <div class="card-header">
+        <span class="badge">Question 6</span>
+        <h2>What is the relationship between star rating and screen size?</h2>
+      </div>
+      <p class="chart-desc">Evaluating whether larger physical screens achieve higher or lower Star Rating Indices under GEMS energy standards.</p>
+      <div class="chart-single">
+        <figure>
+          <img src="Images/charts/Q6.png" alt="Star Rating vs Screen Size Scatter Plot">
+          <figcaption>Figure 6: Scatter Plot of Screen Size vs Star Rating Index</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Question 7 (Optional) -->
+    <section class="chart-card">
+      <div class="card-header">
+        <span class="badge badge-optional">Optional</span>
+        <h2>Are there differences in power consumption between brands?</h2>
+      </div>
+      <p class="chart-desc">Evaluating power consumption metrics across major retail brands using distribution and average power metrics.</p>
+      <div class="chart-grid-2">
+        <figure>
+          <img src="Images/charts/Q7.png" alt="Power Consumption Distribution Box Plot">
+          <figcaption>Figure 7.1: Active Power Distribution by Brand (Box Plot)</figcaption>
+        </figure>
+        <figure>
+          <img src="Images/charts/Q7(2).png" alt="Average Power by Brand Bar Chart">
+          <figcaption>Figure 7.2: Average Active Mode Power by Brand (Bar Chart)</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 YanHanWONG 104392138 | All rights reserved. | GenAI Acknowledgement: Code scaffolded using GitHub Copilot / LLM assistance.</p>
+  </footer>
+</body>
+</html>
